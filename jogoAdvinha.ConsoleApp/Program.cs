@@ -65,7 +65,7 @@
                 {
                     Console.Clear();
                     Console.WriteLine("o numero informado eh MENOR");
-                    pontos = pontos - (numeroAdvinha - numAleatorio) / 2;
+                    pontos -= Math.Abs((numeroAdvinha - numAleatorio) / 2);
                     tentativas--;
                     continue;
                 }
@@ -73,7 +73,7 @@
                 {
                     Console.Clear();
                     Console.WriteLine("o numero informado eh MAIOR");
-                    pontos = pontos - (numeroAdvinha - numAleatorio) / 2;
+                    pontos -= Math.Abs((numeroAdvinha - numAleatorio) / 2);
                     tentativas--;
                     continue;
                 }
