@@ -16,16 +16,16 @@
             int tentativas = 0;
             int pontos = 1000;
 
-            tentativas = SelecionaDificuldade(tentativas);
+            tentativas = SelecionarDificuldade(tentativas);
 
             int tentativasIniciais = tentativas;
 
-            LogicaJogo(numAleatorio, ref tentativas, ref pontos, ref tentativasIniciais);
+            GerarLogica(numAleatorio, ref tentativas, ref pontos, ref tentativasIniciais);
 
             Console.ReadLine();
         }
 
-        private static int SelecionaDificuldade(int tentativas)
+        private static int SelecionarDificuldade(int tentativas)
         {
             Console.WriteLine("Selecione a dificuldade: (1)facil, (2) medio, (3) dificil");
             int dificuldade = Convert.ToInt32(Console.ReadLine());
@@ -46,7 +46,7 @@
             return tentativas;
         }
 
-        private static void LogicaJogo(int numAleatorio, ref int tentativas, ref int pontos, ref int tentativasIniciais)
+        private static void GerarLogica(int numAleatorio, ref int tentativas, ref int pontos, ref int tentativasIniciais)
         {
             while (tentativas != 0)
             {
